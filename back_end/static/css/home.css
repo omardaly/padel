@@ -461,3 +461,129 @@ footer {
     padding: 20px;
   }
 }
+
+
+/* User menu container */
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Icon + Username */
+.user-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user-icon i {
+    color: orange;
+}
+
+/* The dropdown (hidden by default) */
+.dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+
+    transition: all 0.25s ease;
+}
+
+/* Visible class (added by JS) */
+.dropdown.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Dropdown links */
+.dropdown a {
+    display: block;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    background: #f3f3f3;
+}
+/* Container */
+.user-menu {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;   
+
+}
+
+/* Button style */
+.user-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #222;          /* match navbar */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.user-btn i {
+    font-size: 14px;
+}
+
+.user-btn:hover {
+    background: #333;
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 44px; /* RIGHT under the button */
+    right: 0;
+    background: #222;
+    padding: 10px 0;
+    border-radius: 10px;
+    min-width: 150px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: 0.25s ease;
+    z-index: 999;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    background: #333;
+}
+
+/* Show dropdown */
+.dropdown.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}

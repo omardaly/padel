@@ -8,11 +8,18 @@ bcrypt = Bcrypt(app)
 
 @app.route('/')
 def home_page():
-    return render_template("Home.html")
+    user = None
+    if "user_id" in session:
+        user = User.get_by_id({"id": session['user_id']})
+    return render_template("Home.html", user=user)
 
 @app.route('/city')
 def city_page():
-    return render_template("City.html")
+    if "user_id" not in session:
+        return redirect(url_for('login_page')) 
+
+    user = User.get_by_id({"id": session['user_id']})
+    return render_template("City.html", user=user)
 
 @app.route('/register')
 def register_page():

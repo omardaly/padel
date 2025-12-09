@@ -17,25 +17,7 @@
         <nav>
             <a href="{{ url_for('home_page') }}">Home</a>
             <a href="{{ url_for('city_page') }}">City</a>
-
-            {% if user %}
-            <!-- Logged-in Navigation -->
-            <div class="user-menu" id="userMenu">
-                <button class="user-btn" id="userBtn">
-                    <i class="fa-solid fa-user"></i>
-                    <span>{{ user.first_name }}</span>
-                    <i class="fa-solid fa-caret-down"></i>
-                </button>
-
-                <div class="dropdown" id="dropdown">
-                    <a href="{{ url_for('logout') }}">Logout</a>
-                </div>
-            </div>
-
-            {% else %}
-            <!-- Guest Navigation -->
-            <a href="{{ url_for('login_page') }}">Login</a>
-            {% endif %}
+            <a href="{{ url_for('login_page') }}">Logout</a>
         </nav>
     </header>
 
@@ -45,9 +27,6 @@
             <h2 style="color: orange;">PADEL</h2>
             <h2 style="color: white;">REVOLUTION</h2>
             <p>Join the most dynamic padel community today.</p>
-            {% if not user %}
-            <a href="{{ url_for('login_page') }}" class="btn">Join Now</a>
-            {% endif %}
         </div>
     </section>
 

@@ -12,3 +12,18 @@ function revealCards() {
 
 window.addEventListener('scroll', revealCards);
 revealCards();
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("userBtn");
+    const dropdown = document.getElementById("dropdown");
+
+    btn.addEventListener("click", () => {
+        dropdown.classList.toggle("show");
+    });
+
+    // Close when clicking outside
+    document.addEventListener("click", (e) => {
+        if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+            dropdown.classList.remove("show");
+        }
+    });
+});
