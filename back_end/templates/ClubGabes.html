@@ -13,10 +13,9 @@
     <header>
         <h1>Padel Pro Club</h1>
         <nav>
-            <a href="Home.html">Home</a>
-            <a href="City.html">Citys</a>
-            <a href="#coaches">Coaches</a>
-            <a href="#contact">Login</a>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('city_page') }}">City</a>
+            <a href="{{ url_for('login_page') }}">Login</a>
         </nav>
     </header>
 
@@ -33,7 +32,8 @@
         <div class="clubs-grid">
 
             <div class="club-detail-card">
-                <img src="{{ url_for('static', filename='assets/clubs/padel Sky Park.jpg') }}" alt="Padel Pro Club Gabes Center" />
+                <img src="{{ url_for('static', filename='assets/clubs/padel Sky Park.jpg') }}"
+                    alt="Padel Pro Club Gabes Center" />
                 <div class="card-content">
                     <h3>Padel Park Sky</h3>
                     <p>🎾 Le 1er club de Padel à Gabès </p>

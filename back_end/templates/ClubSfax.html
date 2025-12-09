@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padel Pro Club | Tunis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ClubSousse.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1 class="brand-title">Padel Pro Club</h1>
+        <nav>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('city_page') }}">City</a>
+            <a href="{{ url_for('login_page') }}">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Our <span>Sfax</span> Clubs</h2>
+            <p>Experience padel like never before along the coast of Sfax 🌊</p>
+        </div>
+    </section>
+
+    <!-- Clubs List -->
+    <section class="clubs-section">
+        <div class="clubs-grid">
+
+            <div class="club-detail-card">
+                <img src="{{ url_for('static', filename='assets/clubs/sfax.jpg') }}"
+                    alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>sfaxpadelindoor</h3>
+                    <p>🎾| 4 courts de padel indoor</p>
+                    <p>⏱️| ouvert 24h/7j</p>
+                    <p> <a class="insta" href="https://www.instagram.com/sfaxpadelindoor/?hl=fr" target="_blank">
+                            <i class="fab fa-instagram"></i>sfaxpadelindoor</a></p>
+                    <p><a href=""></a></p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps?q=Sfax+Padel+Indoor,+km+1,+5+Rte+de+Gabes,+Thyna&ftid=0x13002d0070e3aca1:0xd4476e401e0bb02e&entry=gps&lucs=,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTI3LjIuNzgxOTAYACDIvAcqWiw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICVE4%3D&g_st=com.google.maps.preview.copy"><span><i
+                                    class="fas fa-map-marker-alt"></i> sfaxpadelindoor</span></a>
+                        <span><i class="fas fa-phone"></i> +216 20445000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-detail-card">
+                <img src="{{ url_for('static', filename='assets/clubs/padel_indoor_lasoukra.jpg') }}"
+                    alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>le_padel_sfax</h3>
+                    <p>🎾 Bienvenue chez Atlas World Padel, votre destination pour le Padel à 𝐒𝐟𝐚𝐱</p>
+                    <p>📆Réservations via application mobile ou par téléphonea</p>
+                    <p>⏱️ 8h-00h30</p>
+                    <p> <a class="insta" href="https://www.instagram.com/le_padel_sfax/?hl=fr" target="_blank">
+                            <i class="fab fa-instagram"></i>le_padel_sfax</a>
+                    </p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps/place/Le+padel+Sfax/@34.7101731,10.7232172,17z/data=!3m1!4b1!4m6!3m5!1s0x13002d133d1fb095:0xf9a570b3a0f78e3b!8m2!3d34.7101687!4d10.7257921!16s%2Fg%2F11y35prbs2?entry=ttu&g_ep=EgoyMDI1MTIwNy4wIKXMDSoASAFQAw%3D%3D"><span><i
+                                    class="fas fa-map-marker-alt"></i>le_padel_sfax</span></a>
+                        <span><i class="fas fa-phone"></i> +216 23 003 004</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>Padel Pro Club connects Tunisia through passion, competition, and community — inspiring players in
+                    every city.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Padel Pro Club</a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Padel Pro Club</a>
+                    <a href="mailto:contact@padelproclub.com"><i class="fas fa-envelope"></i> Padel Pro Club</a>
+                </div>
+                <p class="email">contact@padelproclub.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Padel Pro Club | Designed with passion 🎾
+        </div>
+    </footer>
+</body>
+
+</html>

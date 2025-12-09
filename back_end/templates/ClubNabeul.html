@@ -13,10 +13,10 @@
     <header>
         <h1>Padel Pro Club</h1>
         <nav>
-            <a href="Home.html">Home</a>
-            <a href="City.html">Citys</a>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('city_page') }}">City</a>
             <a href="#coaches">Coaches</a>
-            <a href="#contact">Login</a>
+            <a href="{{ url_for('login_page') }}">Login</a>
         </nav>
     </header>
 
@@ -33,7 +33,8 @@
         <div class="clubs-grid">
 
             <div class="club-detail-card">
-                <img src="{{ url_for('static', filename='assets/clubs/OpadelNabeul.jpg') }}" alt="Padel Pro Club Nabeul Center" />
+                <img src="{{ url_for('static', filename='assets/clubs/OpadelNabeul.jpg') }}"
+                    alt="Padel Pro Club Nabeul Center" />
                 <div class="card-content">
                     <h3>O'padel.Nabeul</h3>
                     <p>🎾 Là où le padel devient une passion ! 🎾</p>
@@ -53,16 +54,17 @@
             </div>
 
             <div class="club-detail-card">
-                <img src="{{ url_for('static', filename='assets/clubs/padel_hammamet.jpg') }}" alt="Padel Pro Club Nabeul Center" />
+                <img src="{{ url_for('static', filename='assets/clubs/padel_hammamet.jpg') }}"
+                    alt="Padel Pro Club Nabeul Center" />
                 <div class="card-content">
                     <h3>Padel Hammamet</h3>
                     <p>📍 Hôtel Manar Hammamet </p>
                     <p> Padel Club 🎾</p>
                     <p> 2 Outdoor Padel Courts 🎾</p>
                     <p>⏱️ 8h-00h30</p>
-                    
-                    <p> <a class="insta" href="https://www.instagram.com/padel_hammamet"
-                            target="_blank"> <i class="fab fa-instagram"></i>padel hammamet</a></p>
+
+                    <p> <a class="insta" href="https://www.instagram.com/padel_hammamet" target="_blank"> <i
+                                class="fab fa-instagram"></i>padel hammamet</a></p>
                     <div class="info">
                         <a class="location"
                             href="https://l.instagram.com/?u=https%3A%2F%2Fmaps.app.goo.gl%2Fv93C3MpbJyd8nJtg8%3Fg_st%3Dii%26fbclid%3DPAZXh0bgNhZW0CMTEAAaeHF42ARiILhXpkt7maRKbbAy7Rq9DbqYAPSPV7s1zuavFOGLbtyT7t54niiw_aem_45AjpfupocSVTm3lPVz35w&e=AT2QkoxtjMZDVeDLtvq90omkis9QWF0ztPHyWwDlX1A2BDvtLx3sIvjtXICAd_MFgXo_C9xF9ihqMG1UCBjpgNuDNbLRPqpc-m2Xkuc_2g"><span><i

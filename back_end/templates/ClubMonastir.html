@@ -13,10 +13,9 @@
     <header>
         <h1>Padel Pro Club</h1>
         <nav>
-            <a href="Home.html">Home</a>
-            <a href="City.html">Citys</a>
-            <a href="#coaches">Coaches</a>
-            <a href="#contact">Login</a>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('city_page') }}">City</a>
+            <a href="{{ url_for('login_page') }}">Login</a>
         </nav>
     </header>
 
@@ -33,7 +32,8 @@
         <div class="clubs-grid">
 
             <div class="club-detail-card">
-                <img src="{{ url_for('static', filename='assets/clubs/royalpadel.jpg') }}" alt="Padel Pro Club Monastir Center" />
+                <img src="{{ url_for('static', filename='assets/clubs/royalpadel.jpg') }}"
+                    alt="Padel Pro Club Monastir Center" />
                 <div class="card-content">
                     <h3>Royal Padel</h3>
                     <p>🎾 bienvenue chez Royal Padel votre nouveau club sportif indoors </p>
@@ -51,7 +51,8 @@
             </div>
 
             <div class="club-detail-card">
-                <img src="{{ url_for('static', filename='assets/clubs/padeluprivage.jpg') }}" alt="Padel Pro Club Monastir Center" />
+                <img src="{{ url_for('static', filename='assets/clubs/padeluprivage.jpg') }}"
+                    alt="Padel Pro Club Monastir Center" />
                 <div class="card-content">
                     <h3>Padel Up Monastir</h3>
                     <p>🎾 Padel Club </p>
@@ -59,7 +60,8 @@
                     <p> 📲 Réservez vos matchs directement depuis notre application "padelupmonastir" </p>
                     <p> <a class="insta" href="https://www.instagram.com/padelupmonastir" target="_blank"> <i
                                 class="fab fa-instagram"></i>Padel Up Monastir</a></p>
-                    <p>web : <a class="link" href="https://padelupmonastir-tn.matchpoint.com.es/#2">Padel Up Monastir</a></p>
+                    <p>web : <a class="link" href="https://padelupmonastir-tn.matchpoint.com.es/#2">Padel Up
+                            Monastir</a></p>
                     <div class="info">
                         <a class="location"
                             href="https://www.google.com/maps/place/padel+up+monastir/data=!4m2!3m1!1s0x1302130033822b69:0xb6479795df87e6cb?sa=X&ved=1t:242&ictx=111"><span><i
@@ -70,7 +72,8 @@
             </div>
 
             <div class="club-detail-card">
-                <img src="{{ url_for('static', filename='assets/clubs/padelclubrivage.jpg') }}" alt="Padel Pro Club Monastir Center" />
+                <img src="{{ url_for('static', filename='assets/clubs/padelclubrivage.jpg') }}"
+                    alt="Padel Pro Club Monastir Center" />
                 <div class="card-content">
                     <h3>Padel Club Rivage Monastir</h3>
                     <p>🎾 Padel Club </p>
