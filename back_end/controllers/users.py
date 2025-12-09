@@ -30,8 +30,22 @@ def club_tunis():
 def club_sousse():
     return render_template("ClubSousse.html")
 
+@app.route('/club/nabeul')
+def club_nabeul():
+    return render_template("ClubNabeul.html")
+
+@app.route('/club/gabes')
+def club_gabes():
+    return render_template("ClubGabes.html")
+
+@app.route('/club/monastir')
+def club_monastir():
+    return render_template("ClubMonastir.html")
 
 
+@app.route('/club/sfax')
+def club_sfax():
+    return render_template("ClubSfax.html")
 
 @app.route('/users/create', methods=['POST'])
 def register():
