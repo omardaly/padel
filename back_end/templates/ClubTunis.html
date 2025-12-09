@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padel Pro Club | Sousse</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/back_end/static/css/ClubSousse.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="brand-title">Padel Pro Club</h1>
+        <nav>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('city_page') }}">City</a>
+            <a href="#coaches">Coaches</a>
+            <a href="{{ url_for('login_page') }}">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Our <span>Tunis</span> Clubs</h2>
+            <p>Experience padel like never before along the coast of Tunis 🌊</p>
+        </div>
+    </section>
+
+    <!-- Clubs List -->
+    <section class="clubs-section">
+        <div class="clubs-grid">
+
+            <div class="club-detail-card">
+                <img src="/frent-end/assets/clubs/Euphoria Padel Ezzahra.jpg" alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>Euphoria Padel Ezzahra</h3>
+                    <p>🔥 Where champions play!</p>
+                    <p>🎾 2 Terrains Outdoor</p>
+                    <p>⏱️ 8h-00h30</p>
+                    <p> <a class="insta" href="https://www.instagram.com/euphoriapadelezzahra/?hl=fr" target="_blank">
+                            <i class="fab fa-instagram"></i>Euphoria Padel Ezzahra</a></p>
+                    <p><a href=""></a></p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps/place/Euphoria+Padel+Ezzahra/@36.7351855,10.3055165,664m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12fd4977e4083f93:0x4f4c4fa0649f31d4!8m2!3d36.7351812!4d10.3080914!16s%2Fg%2F11x01bdv7z?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"><span><i
+                                    class="fas fa-map-marker-alt"></i> Euphoria Padel Ezzahra</span></a>
+                        <span><i class="fas fa-phone"></i> +216 53 847 847</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-detail-card">
+                <img src="/frent-end/assets/clubs/padel_indoor_lasoukra.jpg" alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>padel_indoor_lasoukra</h3>
+                    <p>📢Premier club de PADEL INDOOR avec 2 courts entièrement couverts.🥇</p>
+                    <p>📆Réservations via application mobile ou par téléphonea</p>
+                    <p>⏱️ 8h-00h30</p>
+                    <p> <a class="insta" href="https://www.instagram.com/padel_indoor_lasoukra/?hl=fr"
+                            target="_blank"></a>
+                        <i class="fab fa-instagram"></i>padel_indoor_lasoukra</a>
+                    </p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps/place/Padel+indoor+la+soukra/@36.8718213,10.2277914,663m/data=!3m2!1e3!4b1!4m6!3m5!1s0x12e2cbf45b0dc18f:0xd8b731bbdb285549!8m2!3d36.871817!4d10.2303663!16s%2Fg%2F11pdf6hq57?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"><span><i
+                                    class="fas fa-map-marker-alt"></i>padel_indoor_lasoukra</span></a>
+                        <span><i class="fas fa-phone"></i> +216 24 722 000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-detail-card">
+                <img src="/frent-end/assets/clubs/padelconnection.jpg" alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>padelconnection</h3>
+                    <p> Master your padel game</p>
+                    <p>🔥 Official MENA rep of @academia_pablo_ayma</p>
+                    <p>📚 Tailored training for all levels</p>
+                    <p>💬 Join the #1 Padel Academy/Family💬 Join the #1 Padel Academy/Family</p>
+                    <p>⏱️ 8h-00h30</p>
+                    <p> <a class="insta" href="https://www.instagram.com/yalla_padel_sousse/?hl=fr" target="_blank"> <i
+                                class="fab fa-instagram"></i>padelconnection</a></p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps/place/JAZ+Tour+KHALEF/@35.836333,10.624944,10755m/data=!3m1!1e3!4m9!3m8!1s0x130275845c84cf75:0xca0796721fcce97e!5m2!4m1!1i2!8m2!3d35.8488573!4d10.6198143!16s%2Fg%2F1hhxpwzxg?hl=fr&entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"><span><i
+                                    class="fas fa-map-marker-alt"></i> padelconnection</span></a>
+                        <span><i class="fas fa-phone"></i> +216 55 620 060</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>Padel Pro Club connects Tunisia through passion, competition, and community — inspiring players in
+                    every city.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Padel Pro Club</a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Padel Pro Club</a>
+                    <a href="mailto:contact@padelproclub.com"><i class="fas fa-envelope"></i> Padel Pro Club</a>
+                </div>
+                <p class="email">contact@padelproclub.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Padel Pro Club | Designed with passion 🎾
+        </div>
+    </footer>
+</body>
+
+</html>

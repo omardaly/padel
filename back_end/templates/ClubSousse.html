@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padel Pro Club | Sousse</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ClubSousse.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="brand-title">Padel Pro Club</h1>
+        <nav>
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('city_page') }}">City</a>
+            <a href="#coaches">Coaches</a>
+            <a href="{{ url_for('login_page') }}">Login</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Our <span>Sousse</span> Clubs</h2>
+            <p>Experience padel like never before along the coast of Sousse 🌊</p>
+        </div>
+    </section>
+
+    <!-- Clubs List -->
+    <section class="clubs-section">
+        <div class="clubs-grid">
+
+            <div class="club-detail-card">
+                <img src="/frent-end/assets/clubs/Stras_padel.jpg" alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>stars_padel_club</h3>
+                    <p>⭐️ Premium Indoor Padel Club</p>
+                    <p>📍 Sousse , Tunisia 🇹🇳</p>
+                    <p>⏱️ 8h-00h30</p>
+                    <p> <a class="insta" href="https://www.instagram.com/stars_padel_club/?hl=fr" target="_blank"> <i
+                                class="fab fa-instagram"></i>stars_padel_club</a></p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps/place/Stars+Padel+Club/@35.8845882,10.5744022,672m/data=!3m1!1e3!4m16!1m9!3m8!1s0x12fd890032f9a68b:0x36c1574555a1f375!2sStars+Padel+Club!8m2!3d35.8845882!4d10.5744022!9m1!1b1!16s%2Fg%2F11w2xt09tx!3m5!1s0x12fd890032f9a68b:0x36c1574555a1f375!8m2!3d35.8845882!4d10.5744022!16s%2Fg%2F11w2xt09tx?hl=en-gb&entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"><span><i
+                                    class="fas fa-map-marker-alt"></i> VHMF+RQJ, P1, Akouda</span></a>
+                        <span><i class="fas fa-phone"></i> +216 52 002 011</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-detail-card">
+                <img src="/frent-end/assets/clubs/padelium_marhaba_sousse.jpg" alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>padelium_marhaba_sousse</h3>
+                    <p>🎾 Padel Club</p>
+                    <p>📍 Occidental Sousse Marhaba</p>
+                    <p>⏱️ 8h-00h30</p>
+                    <p> <a class="insta" href="https://www.instagram.com/padelium_marhaba_sousse/?hl=fr"
+                            target="_blank"> <i class="fab fa-instagram"></i>padelium_marhaba_sousse</a></p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps?q=Padelium+Marhaba,+2011+Av.+14+Janvier,+Sousse&ftid=0x12fd8b0030e357b3:0x92863e1f33a1fdc7&entry=gps&lucs=,94242496,94224825,94227247,94227248,47071704,47069508,94218641,94203019,47084304,94208458,94208447&g_ep=CAISDTYuMTE5LjEuNjYwNTAYACDXggMqYyw5NDI0MjQ5Niw5NDIyNDgyNSw5NDIyNzI0Nyw5NDIyNzI0OCw0NzA3MTcwNCw0NzA2OTUwOCw5NDIxODY0MSw5NDIwMzAxOSw0NzA4NDMwNCw5NDIwODQ1OCw5NDIwODQ0N0ICVE4%3D&g_st=com.google.maps.preview.copy"><span><i
+                                    class="fas fa-map-marker-alt"></i>Occidental Sousse Marhaba</span></a>
+                        <span><i class="fas fa-phone"></i> +216 51 108 108</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-detail-card">
+                <img src="/frent-end/assets/clubs/yalla_padel_sousse.jpg" alt="Padel Pro Club Sousse Center" />
+                <div class="card-content">
+                    <h3>yalla_padel_sousse</h3>
+                    <p>🎾 Padel Club</p>
+                    <p>📍JAZ Tour KHALEF, Bd du 14 Janvier, Sousse 4051</p>
+                    <p>⏱️ 8h-00h30</p>
+                    <p> <a class="insta" href="https://www.instagram.com/yalla_padel_sousse/?hl=fr" target="_blank"> <i
+                                class="fab fa-instagram"></i>yalla_padel_sousse</a></p>
+                    <div class="info">
+                        <a
+                            href="https://www.google.com/maps/place/JAZ+Tour+KHALEF/@35.836333,10.624944,10755m/data=!3m1!1e3!4m9!3m8!1s0x130275845c84cf75:0xca0796721fcce97e!5m2!4m1!1i2!8m2!3d35.8488573!4d10.6198143!16s%2Fg%2F1hhxpwzxg?hl=fr&entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"><span><i
+                                    class="fas fa-map-marker-alt"></i> JAZ Tour KHALEF, Bd du 14 Janvier, Sousse
+                                4051</span></a>
+                        <span><i class="fas fa-phone"></i> +216 55 620 060</span>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>Padel Pro Club connects Tunisia through passion, competition, and community — inspiring players in
+                    every city.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Padel Pro Club</a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Padel Pro Club</a>
+                    <a href="mailto:contact@padelproclub.com"><i class="fas fa-envelope"></i> Padel Pro Club</a>
+                </div>
+                <p class="email">contact@padelproclub.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Padel Pro Club | Designed with passion 🎾
+        </div>
+    </footer>
+</body>
+
+</html>
