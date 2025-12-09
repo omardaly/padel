@@ -10,8 +10,6 @@
 
 </head>
 
-
-
 <body>
 
     <header>
@@ -29,11 +27,10 @@
             <p>Discover premier padel facilities across Tunisia 🇹🇳</p>
         </div>
     </section>
-
-    <a href="{{ url_for('club_tunis') }}" class="club-link">
+    <a href="{{url_for('club_tunis')}}" class="club-link">
         <div class="clubs-grid">
             <div class="club-card">
-                <img src="/frent-end/assets/tunis2.jpg" alt="Padel Club Tunis">
+                <img src="{{ url_for('static', filename='assets/tunis2.jpg') }}" alt="Padel club Tunis">
                 <div class="content">
                     <h3>Padel Pro Club - <span style="color: orange;">Tunis</span></h3>
                     <p>Our flagship club in the capital, offering state-of-the-art courts and a vibrant community of
@@ -45,9 +42,9 @@
                 </div>
             </div>
     </a>
-    <a href="{{ url_for('club_sousse') }}" class="club-link">
+    <a href="{{url_for('club_sousse')}}" class="club-link">
         <div class="club-card">
-            <img src="/frent-end/assets/sousse.jpg" alt="Padel Club Sousse">
+                <img src="{{ url_for('static', filename='assets/sousse.jpg') }}" alt="Padel club Sousse">
             <div class="content">
                 <h3>Padel Pro Club - <span style="color: orange;">Sousse</span></h3>
                 <p>Located by the sea, this club brings together sport and leisure — perfect for a weekend game and
@@ -60,8 +57,9 @@
     </a>
 
 
+    <a href="{{url_for('club_nabeul')}}" class="club-link">
     <div class="club-card">
-        <img src="/frent-end/assets/nabeul.jpg" alt="Padel Club Nabeul">
+            <img src="{{ url_for('static', filename='assets/Nabeul.jpg') }}" alt="Padel club Nabeul">
         <div class="content">
             <h3>Padel Pro Club - <span style="color: orange;">Nabeul</span> </h3>
             <p>The southern hub for padel — hosting weekly tournaments and offering professional coaching for all
@@ -71,9 +69,11 @@
             </div>
         </div>
     </div>
+    </a>
 
+        <a href="{{url_for('club_gabes')}}" class="club-link">
     <div class="club-card">
-        <img src="/frent-end/assets/gabes.jpg" alt="Padel Club Gabes">
+                <img src="{{ url_for('static', filename='assets/gabes.jpg') }}" alt="Padel club Gabes">
         <div class="content">
             <h3>Padel Pro Club - <span style="color: orange;">Gabes</span></h3>
             <p>Play under the sun in Gabes — premium facilities surrounded by beautiful coastal scenery.</p>
@@ -82,8 +82,11 @@
             </div>
         </div>
     </div>
+        </a>
+
+            <a href="{{url_for('club_monastir')}}" class="club-link">
     <div class="club-card">
-        <img src="/frent-end/assets/monastir.jpg" alt="Padel Club Monastir">
+            <img src="{{ url_for('static', filename='assets/Monastir.jpg') }}" alt="Padel club Monastir">
         <div class="content">
             <h3>Padel Pro Club - <span style="color: orange;">Monastir</span></h3>
             <p>Play under the sun in Monastir — premium facilities surrounded by beautiful coastal scenery.</p>
@@ -92,16 +95,20 @@
             </div>
         </div>
     </div>
+            </a>
+
+                <a href="{{url_for('club_sfax')}}" class="club-link">
     <div class="club-card">
-        <img src="/frent-end/assets/hammamet.jpg" alt="Padel Club Hammet">
+                <img src="{{ url_for('static', filename='assets/sfax.jpg') }}" alt="Padel club sfax">
         <div class="content">
-            <h3>Padel Pro Club - <span style="color: orange;">Safx</span></h3>
-            <p>Play under the sun in Hammet — premium facilities surrounded by beautiful coastal scenery.</p>
+            <h3>Padel Pro Club - <span style="color: orange;">Sfax</span></h3>
+            <p>Play under the sun in Sfax — premium facilities surrounded by beautiful coastal scenery.</p>
             <div class="club-info">
                 <span><i class="fas fa-map-marker-alt"></i>Sfax</span>
             </div>
         </div>
     </div>
+            </a>
     </div>
 
     <footer>

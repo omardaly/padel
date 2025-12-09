@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padel Pro Club | Monastir</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ClubSousse.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Padel Pro Club</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="City.html">Citys</a>
+            <a href="#coaches">Coaches</a>
+            <a href="#contact">Login</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover Our <span>Monastir</span> Clubs</h2>
+            <p>Experience padel like never before along the coast of Monastir</p>
+        </div>
+    </section>
+
+    <!-- Clubs List -->
+    <section class="clubs-section">
+        <div class="clubs-grid">
+
+            <div class="club-detail-card">
+                <img src="{{ url_for('static', filename='assets/clubs/royalpadel.jpg') }}" alt="Padel Pro Club Monastir Center" />
+                <div class="card-content">
+                    <h3>Royal Padel</h3>
+                    <p>🎾 bienvenue chez Royal Padel votre nouveau club sportif indoors </p>
+                    <p>📲 réserver votre terrain via notre lien</p>
+                    <p>📍 route de masjed aissa sahline monastir, Monastir, Tunisia </p>
+                    <p> <a class="insta" href="https://www.instagram.com/royalpadel.monastir" target="_blank"> <i
+                                class="fab fa-instagram"></i>Royal Padel</a></p>
+                    <div class="info">
+                        <a class="location"
+                            href="https://www.google.com/maps/place/Royal+Padel+Monastir/data=!4m2!3m1!1s0x0:0x1968441ef18417a0?sa=X&ved=1t:2428&ictx=111"><span><i
+                                    class="fas fa-map-marker-alt"></i> PPPR+FG5, Monastir, Rue, Mesjed Aissa</span></a>
+                        <span><i class="fas fa-phone"></i> +216 29 274 040</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-detail-card">
+                <img src="{{ url_for('static', filename='assets/clubs/padeluprivage.jpg') }}" alt="Padel Pro Club Monastir Center" />
+                <div class="card-content">
+                    <h3>Padel Up Monastir</h3>
+                    <p>🎾 Padel Club </p>
+                    <p> Padel Up Monastir est la destination padel idéale! </p>
+                    <p> 📲 Réservez vos matchs directement depuis notre application "padelupmonastir" </p>
+                    <p> <a class="insta" href="https://www.instagram.com/padelupmonastir" target="_blank"> <i
+                                class="fab fa-instagram"></i>Padel Up Monastir</a></p>
+                    <p>web : <a class="link" href="https://padelupmonastir-tn.matchpoint.com.es/#2">Padel Up Monastir</a></p>
+                    <div class="info">
+                        <a class="location"
+                            href="https://www.google.com/maps/place/padel+up+monastir/data=!4m2!3m1!1s0x1302130033822b69:0xb6479795df87e6cb?sa=X&ved=1t:242&ictx=111"><span><i
+                                    class="fas fa-map-marker-alt"></i> QR3H+655, Monastir</span></a>
+                        <span><i class="fas fa-phone"></i> +216 57 185 750</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-detail-card">
+                <img src="{{ url_for('static', filename='assets/clubs/padelclubrivage.jpg') }}" alt="Padel Pro Club Monastir Center" />
+                <div class="card-content">
+                    <h3>Padel Club Rivage Monastir</h3>
+                    <p>🎾 Padel Club </p>
+                    <p> Sports et loisirs </p>
+                    <p> https://www.monarquehotels.tn/club-rivage-monastir/ </p>
+                    <p> <a class="insta" href="https://www.instagram.com/padel_club_rivage" target="_blank"> <i
+                                class="fab fa-instagram"></i>Padel Club Rivage Monastir</a></p>
+                    <div class="info">
+                        <a class="location"
+                            href="https://www.google.com/maps/place/Monarque+Club+Rivage+Monastir/@35.7747889,10.71098,17z/data=!3m1!4b1!4m9!3m8!1s0x13020d268adfd1b3:0x1e235c5b6a13bb68!5m2!4m1!1i2!8m2!3d35.7747889!4d10.71098!16s%2Fg%2F1pp2tjn_k?entry=ttu&g_ep=EgoyMDI1MTAyMi4wIKXMDSoASAFQAw%3D%3D"><span><i
+                                    class="fas fa-map-marker-alt"></i> Monastir, skanes 5000</span></a>
+                        <span><i class="fas fa-phone"></i> +216 58 044 400</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>Padel Pro Club connects Tunisia through passion, competition, and community — inspiring players in
+                    every city.</p>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Padel Pro Club</a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Padel Pro Club</a>
+                    <a href="mailto:contact@padelproclub.com"><i class="fas fa-envelope"></i> Padel Pro Club</a>
+                </div>
+                <p class="email">contact@padelproclub.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 Padel Pro Club | Designed with passion 🎾
+        </div>
+    </footer>
+</body>
+
+</html>
